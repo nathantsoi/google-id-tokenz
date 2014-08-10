@@ -14,14 +14,14 @@
 # limitations under the License.
 
 Gem::Specification.new do |s|
-  s.name = "google-id-token"
-  s.version = "1.2.0"
+  s.name = "google-id-tokenz"
+  s.version = "1.2.1"
 
-  s.homepage = "https://code.google.com/p/google-id-token/"
+  s.homepage = "https://github.com/nathantsoi/google-id-tokenz"
   s.summary = 'Google ID Token utilities'
   s.description = 'Google ID Token utilities; currently just a parser/checker'
 
-  s.files = ["lib/google-id-token.rb", "README.rdoc" ]
+  s.files = ["lib/google-id-token.rb", "README.md" ]
 
   s.add_runtime_dependency "multi_json"
   s.add_runtime_dependency "jwt"
@@ -31,6 +31,6 @@ Gem::Specification.new do |s|
   s.add_development_dependency "rspec"
   s.add_development_dependency "openssl"
 
-  s.authors = ["Tim Bray", "Bob Aman"]
-  s.email = 'tbray@textuality.com'
+  s.authors = ["Tim Bray", "Bob Aman", "Nathan Tsoi"]
+  s.email = 'nathan@vertile.com'
 end
