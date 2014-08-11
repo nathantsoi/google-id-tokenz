@@ -15,13 +15,13 @@
 
 Gem::Specification.new do |s|
   s.name = "google-id-tokenz"
-  s.version = "1.2.1"
+  s.version = "1.2.3"
 
   s.homepage = "https://github.com/nathantsoi/google-id-tokenz"
   s.summary = 'Google ID Token utilities'
   s.description = 'Google ID Token utilities; currently just a parser/checker'
 
-  s.files = ["lib/google-id-token.rb", "README.md" ]
+  s.files = ["lib/google-id-token.rb", "lib/google-id-tokenz.rb", "README.md" ]
 
   s.add_runtime_dependency "multi_json"
   s.add_runtime_dependency "jwt"
