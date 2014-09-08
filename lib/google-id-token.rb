@@ -121,9 +121,9 @@ module GoogleIDToken
       
       if @token
         if !(@token.has_key?('aud') && (@token['aud'] == aud))
-          @problem = 'Token audience mismatch'
+          @problem = "Token audience mismatch; Is #{@token['aud']} but checked against #{aud}"
         elsif cid && !(@token.has_key?('cid') && (@token['cid'] == cid))
-          @problem = 'Token client-id mismatch'
+          @problem = "Token client-id mismatch;  Is #{@token['cid']} but checked against #{cid}"
         end
         @problem ? :problem : :valid
       else
